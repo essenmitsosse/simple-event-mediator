@@ -1,20 +1,20 @@
 {
-	"name": "***MODULENAME***",
+	"name": "simple-event-handler",
 	"version": "0.0.0",
-	"description": "***DESCRIPTION***",
-	"main": "***MODULENAME***.js",
+	"description": "A minimal observer module in vanilla javascript",
+	"main": "simple-event-handler.js",
 	"files": [
-		"***MODULENAME***.js",
+		"simple-event-handler.js",
 		"/lib"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/essenmitsosse/***MODULENAME***"
+		"url": "git+https://github.com/essenmitsosse/simple-event-handler"
 	},
 	"bugs": {
-		"url": "https://github.com/essenmitsosse/***MODULENAME***/issues"
+		"url": "https://github.com/essenmitsosse/simple-event-handler/issues"
 	},
-	"homepage": "https://github.com/essenmitsosse/***MODULENAME***#readme",
+	"homepage": "https://github.com/essenmitsosse/simple-event-handler#readme",
 	"scripts": {
 		"test": "mocha -R spec tests/*",
 		"test:watch": "mocha -R min tests/* -watch",
@@ -24,7 +24,10 @@
 		"javascript",
 		"js",
 		"helper",
-		"vanilla"
+		"vanilla",
+		"observer",
+		"event",
+		"handler"
 	],
 	"author": "Marcus Blättermann <kontakt@essenmitsosse.de> (http://essenmitsosse.de)",
 	"license": "MIT",
@@ -32,6 +35,8 @@
 		"chai": "^4.1.2",
 		"coveralls": "^2.13.1",
 		"istanbul": "^0.4.5",
-		"mocha": "^3.5.3"
+		"mocha": "^3.5.3",
+		"sinon": "^3.3.0",
+		"sinon-chai": "^2.13.0"
 	}
 }
