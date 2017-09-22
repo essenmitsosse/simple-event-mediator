@@ -1,6 +1,6 @@
 {
 	"name": "simple-event-handler",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "A minimal observer module in vanilla javascript",
 	"main": "simple-event-handler.js",
 	"files": [
