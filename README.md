@@ -1,8 +1,8 @@
-# Simple Event Handler
+# Simple Event Mediator
 
-[![Build Status](https://travis-ci.org/essenmitsosse/simple-event-handler.svg)](https://travis-ci.org/essenmitsosse/simple-event-handler) [![Coverage Status](https://coveralls.io/repos/github/essenmitsosse/simple-event-handler/badge.svg)](https://coveralls.io/github/essenmitsosse/simple-event-handler) [![Dependency Status](https://david-dm.org/essenmitsosse/simple-event-handler.svg)](https://david-dm.org/essenmitsosse/simple-event-handler)
+[![Build Status](https://travis-ci.org/essenmitsosse/simple-event-mediator.svg)](https://travis-ci.org/essenmitsosse/simple-event-mediator) [![Coverage Status](https://coveralls.io/repos/github/essenmitsosse/simple-event-mediator/badge.svg)](https://coveralls.io/github/essenmitsosse/simple-event-mediator) [![Dependency Status](https://david-dm.org/essenmitsosse/simple-event-mediator.svg)](https://david-dm.org/essenmitsosse/simple-event-mediator)
 
-A minimal singleton observer module in vanilla javascript.
+A minimal singleton mediator module in vanilla javascript.
 
 # Usage
 
@@ -11,6 +11,6 @@ var callback = function() {
     console.log( "Callback" );
 };
 
-eventHandler.addListener( "myEvent", callback );
-eventHandler.dispatchEvent( "myEvent" );
+eventMediator.addListener( "myEvent", callback );
+eventMediator.dispatchEvent( "myEvent" );
 ```

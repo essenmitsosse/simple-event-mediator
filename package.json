@@ -1,20 +1,20 @@
 {
-	"name": "simple-event-handler",
+	"name": "simple-event-mediator",
 	"version": "0.1.0",
 	"description": "A minimal observer module in vanilla javascript",
-	"main": "simple-event-handler.js",
+	"main": "simple-event-mediator.js",
 	"files": [
-		"simple-event-handler.js",
+		"simple-event-mediator.js",
 		"/lib"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/essenmitsosse/simple-event-handler"
+		"url": "git+https://github.com/essenmitsosse/simple-event-mediator"
 	},
 	"bugs": {
-		"url": "https://github.com/essenmitsosse/simple-event-handler/issues"
+		"url": "https://github.com/essenmitsosse/simple-event-mediator/issues"
 	},
-	"homepage": "https://github.com/essenmitsosse/simple-event-handler#readme",
+	"homepage": "https://github.com/essenmitsosse/simple-event-mediator#readme",
 	"scripts": {
 		"test": "mocha -R spec tests/*",
 		"test:watch": "mocha -R min tests/* -watch",

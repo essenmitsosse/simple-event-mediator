@@ -4,15 +4,15 @@ var chai = require( "chai" ),
 	expect = chai.expect,
 	sinonChai = require( "sinon-chai" ),
 	sinon = require( "sinon" ),
-	getEventHandler = require( "../lib/getEventHandler" ),
-	simpleEventHandler = require( "../simple-event-handler" );
+	getEventMediator = require( "../lib/getEventMediator" ),
+	simpleEventMediator = require( "../simple-event-mediator" );
 
 chai.should();
 chai.use( sinonChai );
 
 describe( "Event registery and call", function () {
 	beforeEach( function () {
-		this.eventHandler = getEventHandler();
+		this.eventHandler = getEventMediator();
 	} );
 
 	it( "Should call registered events when an event is dispatched", function () {
@@ -53,8 +53,8 @@ describe( "Singleton implementation", function () {
 	it( "Should call registered events when an event is dispatched", function () {
 		var spy = sinon.spy();
 
-		simpleEventHandler.addListener( "myEvent", spy );
-		simpleEventHandler.dispatchEvent( "myEvent" );
+		simpleEventMediator.addListener( "myEvent", spy );
+		simpleEventMediator.dispatchEvent( "myEvent" );
 
 		expect( spy )
 			.to.have.been.called;

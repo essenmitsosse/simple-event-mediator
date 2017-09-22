@@ -1,5 +1,5 @@
 "use strict";
 
 module.exports = ( function () {
-	return require( "./lib/getEventHandler" )();
+	return require( "./lib/getEventMediator" )();
 } )();
